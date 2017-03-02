@@ -1,13 +1,13 @@
 # Maximo Cleanup
-IBM Maximo automation scripts (Jython) to cleanup MBOs such as Work Order, Ticket, and Asset
+IBM Maximo automation scripts (Jython) to cleanup MBOs such as Work Order and Ticket
 
 #Disclaimer
 The script and steps are provided as is and use it at own risk. It is not recommended for production environment, please use maximo archiving product instead.
 
 # Background
 Certain maximo MBOs do not allow deletion after activities have been committed to the record such as change of status, applied workflow, and communication log
-This behaviour could be expected in production environment. However, at some development and test environment, maximo designer may need to delete records after test activities.
-This library has some script that may help the record deletion without needing to reinstall new maximo.
+This behaviour is expected in production environment. However, at development and test environment, maximo designer may need to delete records after test activities.
+This library has some scripts that may help the record deletion after testing.
 
 #Prepare Cleanup for Communication Log
 ##1. Create Script with Action Launch Point:
