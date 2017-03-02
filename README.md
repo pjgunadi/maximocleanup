@@ -19,11 +19,16 @@ This library has some script that may help the record deletion without needing t
 - Active: Ticked
 - Script: New
 
+![cleanupcommlog-1](https://github.ibm.com/paulus/maximocleanup/blob/master/images/CLEANUPCOMMLOG-1.png)
+
 ###Continue with the next dialog for New Script Details:
 - Script: CLEANUPGENERIC
 - Script Description: Generic Cleanup Script
 - Script Language: jython
 - Source Code: import or copy the script from [cleanupgeneric.py](https://github.ibm.com/paulus/maximocleanup/blob/master/script/cleanupgeneric.py)
+
+![cleanupcommlog-2](https://github.ibm.com/paulus/maximocleanup/blob/master/images/CLEANUPCOMMLOG-2.png)
+![cleanupcommlog-3](https://github.ibm.com/paulus/maximocleanup/blob/master/images/CLEANUPCOMMLOG-3.png)
 
 ##2. Create Action Group:
 - Action: CLEANUPCOMMLOG_GRP
@@ -31,18 +36,22 @@ This library has some script that may help the record deletion without needing t
 - Type: Action Group
 - Members: CLEANUPCOMMLOG
 
+![cleanupcommlog-4](https://github.ibm.com/paulus/maximocleanup/blob/master/images/CLEANUPCOMMLOG-4.png)
+
 ##3. Create Escalation:
 - Escalation: CLEANUPCOMMLOG
 - Description: Cleanup Communication Log
 - Schedule: Adjust as needed
 - Condition: type the 'where clause' condition as needed. 
 
-Add one (1) escalation point with Action Group: CLEANUPCOMMLOG_GRP
+Add one (1) escalation point with Action Group: CLEANUPCOMMLOG_GRP<br>
 *(Optional)* Tick Repeat box as needed
 
 **Important**: 
 - Ensure the condition only select the records that you intend to delete!
 - Deactivate the escalation when it is not being used
+
+![cleanupcommlog-5](https://github.ibm.com/paulus/maximocleanup/blob/master/images/CLEANUPCOMMLOG-5.png)
 
 #Prepare Cleanup for Workflow Instance
 ##1. Create Script with Action Launch Point:
@@ -55,11 +64,17 @@ Add one (1) escalation point with Action Group: CLEANUPCOMMLOG_GRP
 - Script: Existing (share existing script previously created for CLEANUPCOMMLOG)
 - Script: browse and select CLEANUPGENERIC
 
+![cleanupwfinstance-1](https://github.ibm.com/paulus/maximocleanup/blob/master/images/CLEANUPWFINSTANCE-1.png)
+![cleanupwfinstance-2](https://github.ibm.com/paulus/maximocleanup/blob/master/images/CLEANUPWFINSTANCE-2.png)
+![cleanupwfinstance-3](https://github.ibm.com/paulus/maximocleanup/blob/master/images/CLEANUPWFINSTANCE-3.png)
+
 ##2. Create Action Group:
 - Action: CLEANUPWFINSTANCE_GRP
 - Action Description: Cleanup Workflow Instance - Group
 - Type: Action Group
 - Members: CLEANUPWFINSTANCE
+
+![cleanupwfinstance-4](https://github.ibm.com/paulus/maximocleanup/blob/master/images/CLEANUPWFINSTANCE-4.png)
 
 ##3. Create Escalation:
 - Escalation: CLEANUPWFINSTANCE
@@ -67,12 +82,14 @@ Add one (1) escalation point with Action Group: CLEANUPCOMMLOG_GRP
 - Schedule: Adjust as needed
 - Condition: type the 'where clause' condition as needed. 
 
-Add one (1) escalation point with Action Group: CLEANUPWFINSTANCE_GRP
+Add one (1) escalation point with Action Group: CLEANUPWFINSTANCE_GRP<br>
 *(Optional)* Tick Repeat box as needed
 
 **Important**: 
 - Ensure the condition only select the records that you intend to delete!
 - Deactivate the escalation when it is not being used
+
+![cleanupwfinstance-5](https://github.ibm.com/paulus/maximocleanup/blob/master/images/CLEANUPWFINSTANCE-5.png)
 
 #Prepare Cleanup for Work Order
 ##1. Create Script with Action Launch Point for Work Order:
@@ -84,11 +101,16 @@ Add one (1) escalation point with Action Group: CLEANUPWFINSTANCE_GRP
 - Active: Ticked
 - Script: New
 
+![cleanupworkorder-1](https://github.ibm.com/paulus/maximocleanup/blob/master/images/CLEANUPWORKORDER-1.png)
+
 ###Continue with the next dialog for New Script Details:
 - Script: CLEANUPWORKORDER
 - Script Description: WorkOrder Cleanup Script
 - Script Language: jython
 - Source Code: import or copy the script from [cleanupworkorder.py](https://github.ibm.com/paulus/maximocleanup/blob/master/script/cleanupworkorder.py)
+
+![cleanupworkorder-2](https://github.ibm.com/paulus/maximocleanup/blob/master/images/CLEANUPWORKORDER-2.png)
+![cleanupworkorder-3](https://github.ibm.com/paulus/maximocleanup/blob/master/images/CLEANUPWORKORDER-3.png)
 
 ##2. Create Action Group:
 - Action: CLEANUPWORKORDER_GRP
@@ -96,18 +118,22 @@ Add one (1) escalation point with Action Group: CLEANUPWFINSTANCE_GRP
 - Type: Action Group
 - Members: CLEANUPWORKORDER
 
+![cleanupworkorder-4](https://github.ibm.com/paulus/maximocleanup/blob/master/images/CLEANUPWORKORDER-4.png)
+
 ##3. Create Escalation:
 - Escalation: CLEANUPWORKORDER
 - Description: Cleanup WorkOrder
 - Schedule: Adjust as needed
 - Condition: type the 'where clause' condition as needed. 
 
-Add one (1) escalation point with Action Group: CLEANUPWORKORDER_GRP
+Add one (1) escalation point with Action Group: CLEANUPWORKORDER_GRP<br>
 *(Optional)* Tick Repeat box as needed
 
 **Important**: 
 - Ensure the condition only select the records that you intend to delete!
 - Deactivate the escalation when it is not being used
+
+![cleanupworkorder-5](https://github.ibm.com/paulus/maximocleanup/blob/master/images/CLEANUPWORKORDER-5.png)
 
 #Prepare Cleanup for Ticket
 ##1. Create Script with Action Launch Point for Ticket:
@@ -119,11 +145,16 @@ Add one (1) escalation point with Action Group: CLEANUPWORKORDER_GRP
 - Active: Ticked
 - Script: New
 
+![cleanupticket-1](https://github.ibm.com/paulus/maximocleanup/blob/master/images/CLEANUPTICKET-1.png)
+
 ###Continue with the next dialog for New Script Details:
 - Script: CLEANUPTICKET
 - Script Description: Ticket Cleanup Script
 - Script Language: jython
 - Source Code: import or copy the script from [cleanupticket.py](https://github.ibm.com/paulus/maximocleanup/blob/master/script/cleanupticket.py)
+
+![cleanupticket-2](https://github.ibm.com/paulus/maximocleanup/blob/master/images/CLEANUPTICKET-2.png)
+![cleanupticket-3](https://github.ibm.com/paulus/maximocleanup/blob/master/images/CLEANUPTICKET-3.png)
 
 ##2. Create Action Group:
 - Action: CLEANUPTICKET_GRP
@@ -131,18 +162,22 @@ Add one (1) escalation point with Action Group: CLEANUPWORKORDER_GRP
 - Type: Action Group
 - Members: CLEANUPTICKET
 
+![cleanupticket-4](https://github.ibm.com/paulus/maximocleanup/blob/master/images/CLEANUPTICKET-4.png)
+
 ##3. Create Escalation:
 - Escalation: CLEANUPTICKET
 - Description: Cleanup Ticket
 - Schedule: Adjust as needed
 - Condition: type the 'where clause' condition as needed.
 
-Add one (1) escalation point with Action Group: CLEANUPTICKET_GRP
+Add one (1) escalation point with Action Group: CLEANUPTICKET_GRP<br>
 *(Optional)* Tick Repeat box as needed
 
 **Important**: 
 - Ensure the condition only select the records that you intend to delete!
 - Deactivate the escalation when it is not being used
+
+![cleanupticket-5](https://github.ibm.com/paulus/maximocleanup/blob/master/images/CLEANUPTICKET-5.png)
 
 #Sample Usage:
 ####1. Cleanup WorkOrder #1234:
